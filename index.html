@@ -10,9 +10,41 @@
   </head>
 
   <body>
-    Hello, World!
+    <nav>
+      <div class="nav-wrapper blue darken-4">
+        <div class="container">
+          <a href="#" class="brand-logo">Neel Gandhi</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://www.linkedin.com/in/gandhi-neel/"
+                    target="_blank">LinkedIn</a></li>
+            <li><a href="assets/neel_gandhi_navy.pdf"
+                    target="_blank">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-links">
+      <li><a href="https://www.linkedin.com/in/gandhi-neel/"
+             target="_blank">LinkedIn</a></li>
+      <li><a href="assets/neel_gandhi_navy.pdf"
+             target="_blank">Resume</a></li>
+    </ul>
+    <div class="container">
+      Hello, World! This is Neel's portfolio website.
+    </div>
+    
 
     <!--JavaScript at end of body for optimized loading-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.sidenav').sidenav();
+      })
+    </script>
   </body>
 </html>
