@@ -14,8 +14,8 @@
       <nav>
         <div class="nav-wrapper blue-grey darken-4">
           <div class="container">
-            <a href="index.html" class="brand-logo">Neel Gandhi</a>
-            <a href="index.html" class="sidenav-trigger" data-target="mobile-links">
+            <a href="#" class="brand-logo">Neel Gandhi</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-links">
               <i class="material-icons">menu</i>
             </a>
             <ul class="right hide-on-med-and-down">
@@ -35,12 +35,38 @@
       <li><a href="assets/neel_gandhi_navy.pdf">Resume</a></li>
     </ul>
 
-    <!-- Main Container -->
-    <div class="row container">
 
-      <!-- About me card -->
+    <!-- Pinned content -->
+    <div class="container" id="desktop_only" style="display: none;">
+      <div class="pinned row container">
+        <!-- About me card -->
+        <div class="col s12 m4">
+          <div class="card z-depth-5">
+            <div class="card-image">
+              <img src="assets/neel_photo_re.jpg">
+            </div>
+            <div class="card-content">
+              <p> Hi! My name is Neel Gandhi and I'm a junior at Carnegie Mellon
+              University. I study Electrical and Computer Engineering, and I have
+              interests in a wide variety of things, including computer systems,
+              computer vision, parallel computing, and brain computer interfacing.</p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/SirLegolot">GitHub</a>
+              <a href="https://www.linkedin.com/in/gandhi-neel/">LinkedIn</a>
+              <a href="assets/neel_gandhi_navy.pdf">Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- Scrollable content -->
+    <div class="row container">
+      <!-- About me card-->
       <div class="col s12 m4">
-        <div class="card z-depth-5">
+        <div class="card z-depth-5" id="mobile_only" style="display: none;">
           <div class="card-image">
             <img src="assets/neel_photo_re.jpg">
           </div>
@@ -57,7 +83,6 @@
           </div>
         </div>
       </div>
-
 
       <!-- Projects -->
       <div class="col s12 m8">
@@ -502,7 +527,7 @@
 
 
       </div>
-    </div>
+    </div>    
     
 
     <!--JavaScript at end of body for optimized loading-->
@@ -512,6 +537,15 @@
       $(document).ready(function() {
         $('.sidenav').sidenav();
       })
+
+      let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+      console.log(isMobile);
+      if (isMobile) {
+        $("#mobile_only").css("display", "");
+      } else {
+        console.log("i go in here!");
+        $("#desktop_only").css("display", "");
+      }
     </script>
   </body>
 </html>
