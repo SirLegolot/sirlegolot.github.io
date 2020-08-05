@@ -11,28 +11,242 @@
 
   <body>
     <nav>
-      <div class="nav-wrapper blue darken-4">
+      <div class="nav-wrapper">
         <div class="container">
-          <a href="#" class="brand-logo">Neel Gandhi</a>
-          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+          <a href="index.html" class="brand-logo">Neel Gandhi</a>
+          <a href="index.html" class="sidenav-trigger" data-target="mobile-links">
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="https://www.linkedin.com/in/gandhi-neel/"
-                    target="_blank">LinkedIn</a></li>
-            <li><a href="assets/neel_gandhi_navy.pdf"
-                    target="_blank">Resume</a></li>
+            <li><a href="https://github.com/SirLegolot">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/gandhi-neel/">LinkedIn</a></li>
+            <li><a href="assets/neel_gandhi_navy.pdf">Resume</a></li>
           </ul>
         </div>
       </div>
     </nav>
 
     <ul class="sidenav" id="mobile-links">
-      <li><a href="https://www.linkedin.com/in/gandhi-neel/"
-             target="_blank">LinkedIn</a></li>
-      <li><a href="assets/neel_gandhi_navy.pdf"
-             target="_blank">Resume</a></li>
+      <li><a href="https://github.com/SirLegolot">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/gandhi-neel/">LinkedIn</a></li>
+      <li><a href="assets/neel_gandhi_navy.pdf">Resume</a></li>
     </ul>
+
+    <!-- Page Layout here -->
+    <div class="row">
+
+      <div class="col s12 m4 l3 blue-grey">
+        <!-- Grey navigation panel -->
+        <img class="responsive-img circle" src="assets/neel_photo.jpg">
+        Hi! My name is Neel Gandhi and I'm a junior at Carnegie Mellon
+        University. I study Electrical and Computer Engineering, and I have
+        interests in a wide variety of things, including computer systems,
+        computer vision, parallel computing, and brain computer interfacing.
+      </div>
+
+      <div class="col s12 m8 l9 teal">
+
+        <!-- Brain Computer Interfacing -->
+        <div class="col s12 m4">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/placeholder.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Brain Computer Interfacing
+              </span>
+            </div>
+            <div class="card-action">
+              <a href="https://www.cmu.edu/bme/helab/">Lab website</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+                Brain Computer Interfacing
+              </span>
+              <p>I pursued undergraduate research at the Biomedical Functional 
+                Imaging and Neuroengineering Laboratory at Carnegie Mellon 
+                University, working on a team that deals with brain computer 
+                interfaces (BCIs), specifically using EEG data to detect and 
+                utilize motor-related brain signals to move robotic arms.</p>
+                <p>My main project at the lab is developing a custom MATLAB 
+                software package to stream and process EEG data taken from 
+                EEG hardware (amplifiers, caps) to perform BCI tasks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hide.me (Steganography messaging) -->
+        <div class="col s12 m4">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/placeholder.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Hide.me
+              </span>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/SirLegolot/hide.me">Git Repo</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+                Hide.me (Steganography Messaging)
+              </span>
+              <p>For my final project for an introductory CS course, I created 
+              a messaging application that allows users to secretly encode 
+              information such as texts and images within other images without 
+              visibly altering the host image, using a process called 
+              steganography.</p>
+              <p>Created with python sockets and image processing 
+              libraries, Hide.me allows a user to send an image that has secret 
+              information encoded within and encrypt it with a password. On 
+              the other end, the recepient can enter a password to decrypt and 
+              extract the secret contents within the image.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tartan AUV -->
+        <div class="col s12 m4">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/placeholder.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Tartan AUV
+              </span>
+            </div>
+            <div class="card-action">
+              <a href="https://tartanauv.com/team/">TAUV website</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+                Tartan AUV
+              </span>
+              <p>I'm part of the Tartan Autonomous Underwater Vehicle team at 
+              the robotics club at CMU. We particpate in the annual RoboSub
+              competition, where teams build autonmous submarines that perform a
+              variety of tasks such as passing through gates, hitting target 
+              buoys, and dropping markers.</p> 
+              <p>I've worked on a couple of parts of the sub, including being 
+              the testing lead to get the sub ready electronically for testing 
+              (building/soldering) and collecting training data for our deep 
+              learning object detection model to detect buoys and gates. This 
+              past year I also worked a bit on software for trajectory/path 
+              planning as well as mission planning with python and Robot 
+              Operating System.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- We have a Car (WHAC) -->
+        <div class="col s12 m4">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/placeholder.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                We Have A Car
+              </span>
+            </div>
+            <div class="card-action">
+              <a href="https://www.build18.org/garage/project/548/">Build18 website</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+                We Have A Car (WHAC)
+              </span>
+              <p>For the 2020 Build18 competition at CMU, I was part of a team of 5 
+              that built a mini autonomous car that used simultaneous 
+              localization and mapping (SLAM) to map and travel through unknown 
+              environements.</p>
+              <p>The car was built with standard VEX robotics parts, and it 
+              used a Zed mini stereo camera, Rplidar 360 degree lidar, and a 
+              Jetson Xavier for compute power. I primarily worked on 
+              construction of the vehicle and lidar, working with Hector SLAM, 
+              a ROS package that performs SLAM with lidar.</p> 
+            </div>
+          </div>
+        </div>
+
+
+        <!-- CMU Postal Services, But Better (Post-Malautomated) -->
+        <div class="col s12 m4">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/placeholder.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                Post-Malautomated
+              </span>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/SirLegolot/CMUPSbb">Git repo</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+                Post-Malautomated (CMU Postal Services, But Better)
+              </span>
+              <p>For the 2019 Build18 competition at CMU, I worked on a system 
+              to improve the package sorting and delivery process here at CMU.</p>
+              <p>It uses a combination of computer vision with OpenCV, SQL, and 
+              LED indicators so that emplyees can scan a barcode, have it 
+              automatically entered in database, and light up an LED to the
+              given postal bin to put in. When students come to pick up a 
+              package, they add themselves to a queue, and the bins will light 
+              up so the emplyee can go and pick it up for them.</p> 
+            </div>
+          </div>
+        </div>
+          
+
+        <!-- LegoLight -->
+        <div class="col s12 m4">
+          <div class="card sticky-action">
+            <div class="card-image waves-effect waves-block waves-light">
+              <img class="activator" src="assets/placeholder.jpg">
+            </div>
+            <div class="card-content">
+              <span class="card-title activator grey-text text-darken-4">
+                LegoLight
+              </span>
+            </div>
+            <div class="card-action">
+              <a href="https://docs.google.com/presentation/d/1PucvgpA-fuE0kvHsErG5UWR27jBdCbjhKru-MmvsyFc">Presentation</a>
+            </div>
+            <div class="card-reveal">
+              <span class="card-title grey-text text-darken-4">
+                <i class="material-icons right">close</i>
+                LegoLight
+              </span>
+              <p>For the 2019 Build18 competition at CMU, I worked on a system 
+              to improve the package sorting and delivery process here at CMU.</p>
+              <p>It uses a combination of computer vision with OpenCV, SQL, and 
+              LED indicators so that emplyees can scan a barcode, have it 
+              automatically entered in database, and light up an LED to the
+              given postal bin to put in. When students come to pick up a 
+              package, they add themselves to a queue, and the bins will light 
+              up so the emplyee can go and pick it up for them.</p> 
+            </div>
+          </div>
+        </div>
+        
+
+
+
+      </div>
+    </div>
+
     <div class="container">
       Hello, World! This is Neel's portfolio website.
     </div>
