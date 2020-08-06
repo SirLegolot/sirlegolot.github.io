@@ -564,11 +564,9 @@
       })
 
       let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-      console.log(isMobile);
       if (isMobile) {
         $("#mobile_only").css("display", "");
       } else {
-        console.log("i go in here!");
         $("#desktop_only").css("display", "");
       }
     </script>
