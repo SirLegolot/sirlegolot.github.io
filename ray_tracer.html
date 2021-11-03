@@ -1,9 +1,74 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Ray tracer</title>
-    </head>
-    <body>
-        <p>Hello world! This is the initial page for my groups 418 project.</p>
-    </body>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper cyan darken-4">
+        <div class="container">
+          <a href="#" class="brand-logo">Parallelized Ray Tracer</a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-links">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://github.com">GitHub Repo</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-links">
+    <li><a href="https://github.com">GitHub Repo</a></li>
+  </ul>
+
+  <div class="container">
+    <!-- Page Content goes here -->
+    <div class="section">
+      <h5>Proposal</h5>
+      <p>Come back later to find out!</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Checkpoint</h5>
+      <p>Come back later to find out!</p>
+    </div>
+    <div class="divider"></div>
+    <div class="section">
+      <h5>Final</h5>
+      <p>Come back later to find out!</p>
+    </div>
+
+
+
+  </div>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    })
+
+    let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
+    if (isMobile) {
+      $("#mobile_only").css("display", "");
+    } else {
+      $("#desktop_only").css("display", "");
+    }
+  </script>
+</body>
+
 </html>
