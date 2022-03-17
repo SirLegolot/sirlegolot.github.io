@@ -46,10 +46,7 @@ document.onkeypress = function(e) {
 
     if (e.key == '1'){
         test.innerHTML = "";
-        // yuh();
         rockpaperscissors.play();
-        
-        // rpcs.play();
     } else if (e.key == '2') {
         text.innerHTML = "Yes, I win! :)";
         win.play();
@@ -59,6 +56,12 @@ document.onkeypress = function(e) {
     } else if (e.key == '4') {
         text.innerHTML = "We have tied this round.";
         tie.play();
+    } else if (e.key == 'q') {
+        test.innerHTML = "<img src='test_assets/rock.png' width='100px' height='100px'/>";
+    } else if (e.key == 'w') {
+        test.innerHTML = "<img src='test_assets/paper.png' width='100px' height='100px'/>";
+    } else if (e.key == 'e') {
+        test.innerHTML = "<img src='test_assets/scissors.png' width='100px' height='100px'/>";
     }
         
 }
