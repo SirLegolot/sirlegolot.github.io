@@ -6,7 +6,7 @@ function sleep(ms) {
 
 async function yuh() {
     await sleep(1400); // this is when using fast rpcs
-    //await sleep(2000); // this is when using fast rpcs
+    //await sleep(2000); // this is when using normal rpcs
     test.innerHTML="Done audio";
 }
 
