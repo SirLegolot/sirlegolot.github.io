@@ -16,15 +16,38 @@ async function yuh() {
     
 }
 
+function toggle_images(num) {
+    if (num == -1) {
+        shaking.style.display = "none";
+        rock.style.display = "none";
+        paper.style.display = "none";
+        scissors.style.display = "none";
+    } else if (num == 0) {
+        shaking.style.display = "block";
+        rock.style.display = "none";
+        paper.style.display = "none";
+        scissors.style.display = "none";
+    } else if (num == 1) {
+        shaking.style.display = "none";
+        rock.style.display = "block";
+        paper.style.display = "none";
+        scissors.style.display = "none";
+    } else if (num == 2) {
+        shaking.style.display = "none";
+        rock.style.display = "none";
+        paper.style.display = "block";
+        scissors.style.display = "none";
+    } else if (num == 3) {
+        shaking.style.display = "none";
+        rock.style.display = "none";
+        paper.style.display = "none";
+        scissors.style.display = "block";
+    }
+}
+
 function random_hand() {
     let random = getRandomInt(3);
-    if (random == 0) {
-        test.innerHTML = "<img src='test_assets/rock.png' width='300px' height='300px'/>";
-    } else if (random == 1) {
-        test.innerHTML = "<img src='test_assets/paper.png' width='300px' height='300px'/>";
-    } else {
-        test.innerHTML = "<img src='test_assets/scissors.png' width='300px' height='300px'/>";
-    }
+    toggle_images(random+1);
     text.innerHTML = "Analysing your hand...";
     loader.style.display = "block";
 }
@@ -44,6 +67,8 @@ async function next_round() {
     text.innerHTML = "";
 }
 
+
+
 document.onkeypress = async function(e) {
     // test.innerHTML = e.type +
     // ' key=' + e.key +
@@ -57,7 +82,7 @@ document.onkeypress = async function(e) {
     if (e.key == 'Enter'){ 
         loader.style.display = "none";
         await next_round();
-        test.innerHTML = "<img src='test_assets/rpcs.png' width='300px' height='300px' class='vert-move' />";
+        toggle_images(0);
         rockpaperscissors.play();
     } else if (e.key == '1') { 
         loader.style.display = "none";
@@ -72,11 +97,11 @@ document.onkeypress = async function(e) {
         text.innerHTML = "We have tied this round.";
         tie.play();
     } else if (e.key == 'q') {
-        test.innerHTML = "<img src='test_assets/rock.png' width='300px' height='300px'/>";
+        toggle_images(1);
     } else if (e.key == 'w') {
-        test.innerHTML = "<img src='test_assets/paper.png' width='300px' height='300px'/>";
+        toggle_images(2);
     } else if (e.key == 'e') {
-        test.innerHTML = "<img src='test_assets/scissors.png' width='300px' height='300px'/>";
+        toggle_images(3);
     } else if (e.key == '`') {
         if (debug.style.display == "none") {
             debug.style.display = "block";
