@@ -45,14 +45,16 @@ function toggle_images(num) {
     }
 }
 
-function random_hand() {
+async function random_hand() {
+    shaking.style.display = "none";
+    await sleep(200);
     let random = getRandomInt(3);
     toggle_images(random+1);
     text.innerHTML = "Analysing your hand...";
     loader.style.display = "block";
 }
 
-rockpaperscissors.onended = function() {
+rockpaperscissors.onended = async function() {
     random_hand();
     shoot.play();
 }
@@ -102,6 +104,15 @@ document.onkeypress = async function(e) {
         toggle_images(2);
     } else if (e.key == 'e') {
         toggle_images(3);
+    } else if (e.key == 'a') {
+        text.innerHTML = "<p style='color:#00AE08';>Detected rock</p>";
+        loader.style.display = "none";
+    } else if (e.key == 's') {
+        text.innerHTML = "<p style='color:#00AE08';>Detected paper</p>";
+        loader.style.display = "none";
+    } else if (e.key == 'd') {
+        text.innerHTML = "<p style='color:#00AE08';>Detected scissors</p>";
+        loader.style.display = "none";
     } else if (e.key == '`') {
         if (debug.style.display == "none") {
             debug.style.display = "block";
