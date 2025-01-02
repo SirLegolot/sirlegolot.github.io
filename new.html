@@ -143,14 +143,21 @@
                         </button>
                     </div>
                 </article> -->
-                <nav class="scroll">
-                    <button class="chip"><i>rocket</i><span>All</span></button>
-                    <button class="chip"><i class="fa-solid fa-briefcase"></i><span>Work Experience</span></button>
-                    <button class="chip"><i>local_fire_department</i><span>Projects</span></button>
-                    <button class="chip"><i>terminal</i><span>Hackathons</span></button>
-                </nav>
                 <div class="grid">
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l12 page active top">
+                        <nav class="scroll">
+                            <button class="chip fill" name="all_chip"
+                                onclick="show_pages(this);"><i>rocket</i><span>All</span></button>
+                            <button class="chip" name="work_chip" onclick="show_pages(this);"><i
+                                    class="fa-solid fa-briefcase"></i><span>Work
+                                    Experience</span></button>
+                            <button class="chip" name="project_chip"
+                                onclick="show_pages(this);"><i>local_fire_department</i><span>Projects</span></button>
+                            <button class="chip" name="hackathon_chip"
+                                onclick="show_pages(this);"><i>terminal</i><span>Hackathons</span></button>
+                        </nav>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/apple.png">
                             <div class="small-padding center-align">
@@ -158,7 +165,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/torchelastic.png">
                             <div class="small-padding center-align">
@@ -166,7 +173,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/cloudberry_re.png">
                             <div class="small-padding center-align">
@@ -174,23 +181,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/os.png">
-                            <div class="small-padding center-align">
-                                <h6>OS Kernel</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/scotty.png">
-                            <div class="small-padding center-align">
-                                <h6>Scotty3D</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/bci_re.png">
                             <div class="small-padding center-align">
@@ -198,7 +189,23 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/os.png">
+                            <div class="small-padding center-align">
+                                <h6>OS Kernel</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="project_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/scotty.png">
+                            <div class="small-padding center-align">
+                                <h6>Scotty3D</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/sub_re.png">
                             <div class="small-padding center-align">
@@ -207,7 +214,7 @@
                         </article>
                     </section>
                     <!-- TODO hardware accelerated moncular depth sensing -->
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/hideme_re.png">
                             <div class="small-padding center-align">
@@ -215,7 +222,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/whac_re.jpg">
                             <div class="small-padding center-align">
@@ -223,7 +230,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/cmupsbb_re.png">
                             <div class="small-padding center-align">
@@ -231,79 +238,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/labme_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Lab.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/connect_us.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Connect.us</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/mula_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Mula</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/buildme_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Build.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/noah_small.png">
-                            <div class="small-padding center-align">
-                                <h6>Noah's Ark</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/monifi.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Monifi</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/medme_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Med.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/trailtrak_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>TrailTrak</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/twitter_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Twitter Mood Analyzer</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/legolight_re.jpg">
                             <div class="small-padding center-align">
@@ -311,7 +246,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/asteroid.jpg">
                             <div class="small-padding center-align">
@@ -319,11 +254,83 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6">
+                    <section class="s12 m12 l6 page active left" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/wolfram.png">
                             <div class="small-padding center-align">
                                 <h6>196 Algorithm Visualizer</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/labme_re.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Lab.me</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/connect_us.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Connect.us</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/mula_re.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Mula</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/buildme_re.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Build.me</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/noah_small.png">
+                            <div class="small-padding center-align">
+                                <h6>Noah's Ark</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/monifi.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Monifi</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/medme_re.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Med.me</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/trailtrak_re.jpg">
+                            <div class="small-padding center-align">
+                                <h6>TrailTrak</h6>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                        <article class="no-elevate no-padding round wave">
+                            <img class="responsive large top-round" src="./assets/twitter_re.jpg">
+                            <div class="small-padding center-align">
+                                <h6>Twitter Mood Analyzer</h6>
                             </div>
                         </article>
                     </section>
@@ -419,7 +426,7 @@
                 </article> -->
             </section>
             <section class="s12 m12 l4">
-                <article class="no-elevate no-padding round">
+                <article class="no-elevate no-padding round page active right">
                     <!-- TODO: this is huge, idk about this -->
                     <img class="responsive top-round" src="./assets/profile0_square.jpeg">
                     <div class="padding">
