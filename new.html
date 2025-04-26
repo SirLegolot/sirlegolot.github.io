@@ -66,21 +66,24 @@
                 </div>
             </div> -->
             <!-- TODO figure out how this will display in mobile!! -->
-            <button class="transparent circle l m s"><i class="fa-brands fa-github"></i>
+            <a href="https://github.com/SirLegolot" class="button transparent circle l m s"><i
+                    class="fa-brands fa-github"></i>
                 <div class="tooltip bottom">Github</div>
-            </button>
-            <button class="transparent circle l m s"><i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/gandhi-neel/" class="button transparent circle l m s"><i
+                    class="fa-brands fa-linkedin"></i>
                 <div class="tooltip bottom">Linkedin</div>
-            </button>
-            <button class="transparent circle l m s"><i class="fa-solid fa-code"></i>
+            </a>
+            <a href="https://devpost.com/ngandhi" class="button transparent circle l m s"><i
+                    class="fa-solid fa-code"></i>
                 <div class="tooltip bottom">Devpost</div>
-            </button>
-            <button class="transparent circle l m s"><i>description</i>
+            </a>
+            <a href="assets/neel_gandhi_navy.pdf" class="button transparent circle l m s"><i>description</i>
                 <div class="tooltip bottom">Resume</div>
-            </button>
-            <button class="transparent circle l m s"><i>mail</i>
+            </a>
+            <a href="mailto:ngandhi@alumni.cmu.edu" class="button transparent circle l m s"><i>mail</i>
                 <div class="tooltip bottom">Email</div>
-            </button>
+            </a>
             <label class="switch icon l m s">
                 <input type="checkbox" onclick="updateTheme()" checked="checked" />
                 <span>
@@ -126,7 +129,41 @@
     </header>
     <main class="responsive">
         <div class="grid">
-            <section class="s12 m12 l8">
+            <section class="s12 m4 l4">
+                <article class="no-elevate no-padding round page active left">
+                    <!-- TODO: this is huge, idk about this -->
+                    <img class="responsive top-round" src="./assets/profile0_square.jpeg">
+                    <div class="padding">
+                        <!-- TODO there is some weird extra space here that I'm not a fan of -->
+                        <p>Hi! My name is Neel Gandhi and I'm a Carnegie Mellon University alum. I majored in ECE and
+                            minored in CS and BME. I have interests in computer systems, computer vision, parallel
+                            computing, and brain computer interfacing.</p>
+                        <div class="medium-divider"></div>
+                        <div class="center-align">
+                            <a href="https://github.com/SirLegolot" class="button transparent circle l m s"><i
+                                    class="fa-brands fa-github"></i>
+                                <div class="tooltip bottom">Github</div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gandhi-neel/"
+                                class="button transparent circle l m s"><i class="fa-brands fa-linkedin"></i>
+                                <div class="tooltip bottom">Linkedin</div>
+                            </a>
+                            <a href="https://devpost.com/ngandhi" class="button transparent circle l m s"><i
+                                    class="fa-solid fa-code"></i>
+                                <div class="tooltip bottom">Devpost</div>
+                            </a>
+                            <a href="assets/neel_gandhi_navy.pdf"
+                                class="button transparent circle l m s"><i>description</i>
+                                <div class="tooltip bottom">Resume</div>
+                            </a>
+                            <a href="mailto:ngandhi@alumni.cmu.edu" class="button transparent circle l m s"><i>mail</i>
+                                <div class="tooltip bottom">Email</div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="s12 m8 l8">
                 <!-- <article class="no-elevate large-round">
                     <div class="row"><img class="medium"
                             src="https://styles.redditmedia.com/t5_3q4n7w/styles/profileIcon_snoo22ed849b-a83b-4d2b-9de4-03c8b6d981d5-headshot.png?width=256&amp;height=256&amp;crop=256:256,smart&amp;s=795c562ce0d5db702137a660a3b10c446e7a50f8" />
@@ -157,7 +194,7 @@
                                 onclick="show_pages(this);"><i>terminal</i><span>Hackathons</span></button>
                         </nav>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="work_page">
+                    <section class="s12 m6 l6 page active right" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/apple.png">
                             <div class="small-padding center-align">
@@ -165,7 +202,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="work_page">
+                    <section class="s12 m6 l6 page active right" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/torchelastic.png">
                             <div class="small-padding center-align">
@@ -173,7 +210,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="work_page">
+                    <section class="s12 m6 l6 page active right" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/cloudberry_re.png">
                             <div class="small-padding center-align">
@@ -181,7 +218,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="work_page">
+                    <section class="s12 m6 l6 page active right" name="work_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/bci_re.png">
                             <div class="small-padding center-align">
@@ -189,7 +226,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/os.png">
                             <div class="small-padding center-align">
@@ -197,7 +234,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/scotty.png">
                             <div class="small-padding center-align">
@@ -205,7 +242,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/sub_re.png">
                             <div class="small-padding center-align">
@@ -214,7 +251,7 @@
                         </article>
                     </section>
                     <!-- TODO hardware accelerated moncular depth sensing -->
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/hideme_re.png">
                             <div class="small-padding center-align">
@@ -222,7 +259,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/whac_re.jpg">
                             <div class="small-padding center-align">
@@ -230,7 +267,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/cmupsbb_re.png">
                             <div class="small-padding center-align">
@@ -238,7 +275,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/legolight_re.jpg">
                             <div class="small-padding center-align">
@@ -246,7 +283,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/asteroid.jpg">
                             <div class="small-padding center-align">
@@ -254,7 +291,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="project_page">
+                    <section class="s12 m6 l6 page active right" name="project_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/wolfram.png">
                             <div class="small-padding center-align">
@@ -262,7 +299,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/labme_re.jpg">
                             <div class="small-padding center-align">
@@ -270,7 +307,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/connect_us.jpg">
                             <div class="small-padding center-align">
@@ -278,7 +315,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/mula_re.jpg">
                             <div class="small-padding center-align">
@@ -286,7 +323,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/buildme_re.jpg">
                             <div class="small-padding center-align">
@@ -294,7 +331,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/noah_small.png">
                             <div class="small-padding center-align">
@@ -302,7 +339,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/monifi.jpg">
                             <div class="small-padding center-align">
@@ -310,7 +347,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/medme_re.jpg">
                             <div class="small-padding center-align">
@@ -318,7 +355,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/trailtrak_re.jpg">
                             <div class="small-padding center-align">
@@ -326,7 +363,7 @@
                             </div>
                         </article>
                     </section>
-                    <section class="s12 m12 l6 page active left" name="hackathon_page">
+                    <section class="s12 m6 l6 page active right" name="hackathon_page">
                         <article class="no-elevate no-padding round wave">
                             <img class="responsive large top-round" src="./assets/twitter_re.jpg">
                             <div class="small-padding center-align">
@@ -424,36 +461,6 @@
                         </div>
                     </div>
                 </article> -->
-            </section>
-            <section class="s12 m12 l4">
-                <article class="no-elevate no-padding round page active right">
-                    <!-- TODO: this is huge, idk about this -->
-                    <img class="responsive top-round" src="./assets/profile0_square.jpeg">
-                    <div class="padding">
-                        <!-- TODO there is some weird extra space here that I'm not a fan of -->
-                        <p>Hi! My name is Neel Gandhi and I'm a Carnegie Mellon University alum. I majored in ECE and
-                            minored in CS and BME. I have interests in computer systems, computer vision, parallel
-                            computing, and brain computer interfacing.</p>
-                        <div class="medium-divider"></div>
-                        <div class="center-align">
-                            <button class="transparent circle l m s"><i class="fa-brands fa-github"></i>
-                                <div class="tooltip bottom">Github</div>
-                            </button>
-                            <button class="transparent circle l m s"><i class="fa-brands fa-linkedin"></i>
-                                <div class="tooltip bottom">Linkedin</div>
-                            </button>
-                            <button class="transparent circle l m s"><i class="fa-solid fa-code"></i>
-                                <div class="tooltip bottom">Devpost</div>
-                            </button>
-                            <button class="transparent circle l m s"><i>description</i>
-                                <div class="tooltip bottom">Resume</div>
-                            </button>
-                            <button class="transparent circle l m s"><i>mail</i>
-                                <div class="tooltip bottom">Email</div>
-                            </button>
-                        </div>
-                    </div>
-                </article>
             </section>
         </div>
         <dialog id="dialog-post">
