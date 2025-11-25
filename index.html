@@ -1,206 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!--Import materialize.css-->
-  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-  <!--Let browser know website is optimized for mobile-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Meta tags -->
-  <meta property='og:title' content='Neel Gandhi' />
-  <meta property="og:image" content="assets/page.png">
-  <meta property='og:description' content="Neel's Portfolio" />
-  <meta property='og:url' content='https://sirlegolot.github.io/' />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Neel Gandhi</title>
+    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
+
+    <script src="https://kit.fontawesome.com/be341b6768.js" crossorigin="anonymous"></script>
+
+    <meta property='og:title' content='Neel Gandhi' />
+    <meta property="og:image" content="assets/page.png">
+    <meta property='og:description' content="Neel's Portfolio" />
+    <meta property='og:url' content='https://sirlegolot.github.io/' />
+
 </head>
 
-<body class="blue-grey">
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper blue-grey darken-4">
-        <div class="container">
-          <a href="#" class="brand-logo">Neel Gandhi</a>
-          <a href="#" class="sidenav-trigger" data-target="mobile-links">
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="https://github.com/SirLegolot">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/gandhi-neel/">LinkedIn</a></li>
-            <li><a href="assets/neel_gandhi_navy.pdf">Resume</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </div>
-
-
-  <ul class="sidenav" id="mobile-links">
-    <li><a href="https://github.com/SirLegolot">GitHub</a></li>
-    <li><a href="https://www.linkedin.com/in/gandhi-neel/">LinkedIn</a></li>
-    <li><a href="assets/neel_gandhi_navy.pdf">Resume</a></li>
-  </ul>
-
-
-  <!-- Pinned content -->
-  <div class="container" id="desktop_only" style="display: none;">
-    <div class="pinned row container">
-      <!-- About me card -->
-      <div class="col s12 m4">
-        <div class="card z-depth-5">
-          <div class="card-image">
-            <img src="assets/neel_photo_re.jpg">
-          </div>
-          <div class="card-content">
-            <p> Hi! My name is Neel Gandhi and I'm a Carnegie Mellon
-              University alum. I majored in ECE and minored in CS and BME.
-              I have interests in computer systems, computer vision,
-              parallel computing, and brain computer interfacing.</p>
-          </div>
-          <div class="card-action">
-            <a href="https://github.com/SirLegolot">
-              <img src="assets/github_light.png" width="25px">
-            </a>
-            <a href="https://www.linkedin.com/in/gandhi-neel/">
-              <img src="assets/linkedin_light.png" width="25px">
-            </a>
-            <a href="https://devpost.com/ngandhi">
-              <img src="assets/devpost.png" height="25px">
-            </a>
-            <a href="assets/neel_gandhi_navy.pdf">
-              <img src="assets/pdf_light.png" width="25px">
-            </a>
-            <a href="mailto:ngandhi@alumni.cmu.edu">
-              <img src="assets/email.png" width="25px">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Scrollable content -->
-  <div class="row container">
-    <!-- About me card-->
-    <div class="col s12 m4">
-      <div class="card z-depth-5" id="mobile_only" style="display: none;">
-        <div class="card-image">
-          <img src="assets/neel_photo_re.jpg">
-        </div>
-        <div class="card-content">
-          <p> Hi! My name is Neel Gandhi and I'm a Carnegie Mellon
-            University alum. I majored in ECE and minored in CS and BME.
-            I have interests in computer systems, computer vision,
-            parallel computing, and brain computer interfacing.</p>
-        </div>
-        <div class="card-action">
-          <a href="https://github.com/SirLegolot">
-            <img src="assets/github_light.png" width="25px">
-          </a>
-          <a href="https://www.linkedin.com/in/gandhi-neel/">
-            <img src="assets/linkedin_light.png" width="25px">
-          </a>
-          <a href="https://devpost.com/ngandhi">
-            <img src="assets/devpost.png" height="25px">
-          </a>
-          <a href="assets/neel_gandhi_navy.pdf">
-            <img src="assets/pdf_light.png" width="25px">
-          </a>
-          <a href="mailto:ngandhi@alumni.cmu.edu">
-            <img src="assets/email.png" width="25px">
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Projects grid-->
-    <div class="col s12 m8">
-      <div class="row">
-
-        <!-- Title -->
-        <div class="col s12">
-          <div class="card z-depth-3">
-            <div class="card-content">
-              <span class="card-title">
-                Projects
-              </span>
-              <p>Click on the card images or titles for more information
-                on my projects!</p>
+<body class="dark small-line">
+    <header class="fixed">
+        <nav>
+            <div class="max row l m s">
+                <img class="tiny round" src="./assets/profile0_square.jpeg" />
+                <b>Neel Gandhi</b>
             </div>
-          </div>
+            <a href="https://github.com/SirLegolot" class="button transparent circle l m"><i
+                    class="fa-brands fa-github"></i>
+                <div class="tooltip bottom">Github</div>
+            </a>
+            <a href="https://www.linkedin.com/in/gandhi-neel/" class="button transparent circle l m"><i
+                    class="fa-brands fa-linkedin"></i>
+                <div class="tooltip bottom">Linkedin</div>
+            </a>
+            <a href="https://devpost.com/ngandhi" class="button transparent circle l m"><i
+                    class="fa-solid fa-code"></i>
+                <div class="tooltip bottom">Devpost</div>
+            </a>
+            <a href="assets/neel_gandhi_navy.pdf" class="button transparent circle l m"><i>description</i>
+                <div class="tooltip bottom">Resume</div>
+            </a>
+            <a href="mailto:ngandhi@alumni.cmu.edu" class="button transparent circle l m"><i>mail</i>
+                <div class="tooltip bottom">Email</div>
+            </a>
+            <button class="transparent circle s"><i>more_vert</i>
+                <menu class="no-wrap left">
+                    <a href="https://github.com/SirLegolot">Github</a>
+                    <a href="https://www.linkedin.com/in/gandhi-neel/">Linkedin</a>
+                    <a href="https://devpost.com/ngandhi">Devpost</a>
+                    <a href="assets/neel_gandhi_navy.pdf">Resume</a>
+                    <a href="mailto:ngandhi@alumni.cmu.edu">Email</a>
+                </menu>
+            </button>
+            <label class="switch icon l m s">
+                <input type="checkbox" onclick="updateTheme()" checked="checked" />
+                <span>
+                    <i>dark_mode</i>
+                </span>
+            </label>
+        </nav>
+    </header>
+    <main class="responsive">
+        <div class="grid">
+            <section class="s12 m6 l4">
+                <article class="no-elevate no-padding round page active left">
+                    <img class="responsive top-round" src="./assets/profile0_square.jpeg">
+                    <div class="padding">
+                        <p>Hi! My name is Neel Gandhi and I'm a Carnegie Mellon University alum. I majored in ECE and
+                            minored in CS and BME. I have interests in computer systems, computer vision, parallel
+                            computing, and brain computer interfacing.</p>
+                        <div class="medium-divider"></div>
+                        <div class="center-align">
+                            <a href="https://github.com/SirLegolot" class="button transparent circle l m s"><i
+                                    class="fa-brands fa-github"></i>
+                                <div class="tooltip bottom">Github</div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/gandhi-neel/"
+                                class="button transparent circle l m s"><i class="fa-brands fa-linkedin"></i>
+                                <div class="tooltip bottom">Linkedin</div>
+                            </a>
+                            <a href="https://devpost.com/ngandhi" class="button transparent circle l m s"><i
+                                    class="fa-solid fa-code"></i>
+                                <div class="tooltip bottom">Devpost</div>
+                            </a>
+                            <a href="assets/neel_gandhi_navy.pdf"
+                                class="button transparent circle l m s"><i>description</i>
+                                <div class="tooltip bottom">Resume</div>
+                            </a>
+                            <a href="mailto:ngandhi@alumni.cmu.edu" class="button transparent circle l m s"><i>mail</i>
+                                <div class="tooltip bottom">Email</div>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="s12 m6 l8">
+                <div class="grid">
+                    <section class="s12 m12 l12 page active top">
+                        <nav class="scroll">
+                            <button class="chip fill" name="all_chip"
+                                onclick="show_pages(this);"><i>rocket</i><span>All</span></button>
+                            <button class="chip" name="work_chip" onclick="show_pages(this);"><i
+                                    class="fa-solid fa-briefcase"></i><span>Work
+                                    Experience</span></button>
+                            <button class="chip" name="project_chip"
+                                onclick="show_pages(this);"><i>local_fire_department</i><span>Projects</span></button>
+                            <button class="chip" name="hackathon_chip"
+                                onclick="show_pages(this);"><i>terminal</i><span>Hackathons</span></button>
+                        </nav>
+                    </section>
+
+                    <div id="project-card-container" class="grid s12 m12 l12">
+                    </div>
+                </div>
+            </section>
         </div>
 
+        <dialog id="dialog-post">
+            <nav class="wrap">
+                <h6>Project Title Placeholder</h6>
+            </nav>
+            <div class="space"></div>
+            <p>Click on a project card to view its full details here!</p>
+            <footer class="fixed">
+                <nav class="right-align">
+                    <button data-ui="#dialog-post">Close</button>
+                </nav>
+            </footer>
+        </dialog>
+    </main>
 
-        <div id="project-list"></div>
+    <script src="./js/projects.js"></script>
 
-      </div>
-    </div>
+    <script src="./js/new.js"></script>
 
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-
-    <script type="text/javascript" src="js/projects.js"></script>
-
-    <script>
-      $(document).ready(function () {
-        $('.sidenav').sidenav();
-
-        // Dynamic Project Rendering
-        const projectContainer = document.getElementById('project-list');
-
-        projects.forEach(project => {
-          // Create HTML for links (handles multiple links per card)
-          const linksHtml = project.links.map(link =>
-            `<a href="${link.url}">${link.text}</a>`
-          ).join('');
-
-          // Create HTML for description paragraphs. Note: We use the array structure
-          // and join it with <p> tags, which allows descriptions to contain HTML/links.
-          const descriptionHtml = project.description.map(paragraph =>
-            `<p>${paragraph}</p>`
-          ).join('');
-
-          // Build the card HTML using a template literal
-          const cardHtml = `
-          <div class="col s12 m6">
-            <div class="card sticky-action z-depth-3">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator" src="${project.image}">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">
-                  ${project.title}
-                </span>
-              </div>
-              <div class="card-action">
-                ${linksHtml}
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">
-                  <i class="material-icons right">close</i>
-                  ${project.title}
-                </span>
-                ${descriptionHtml}
-              </div>
-            </div>
-          </div>
-        `;
-
-          // Append to the container
-          projectContainer.innerHTML += cardHtml;
-        });
-      });
-
-      let isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-      if (isMobile) {
-        $("#mobile_only").css("display", "");
-      } else {
-        $("#desktop_only").css("display", "");
-      }
-    </script>
 </body>
 
 </html>

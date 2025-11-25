@@ -4,10 +4,10 @@ const projects = [
     image: "assets/apple.png",
     type: "work",
     links: [
-      // No links!
+      { text: "", url: "https://en.wikipedia.org/wiki/Apple_silicon" }
     ],
     description: [
-      "As part of the Plaftorm Architecture group, I work on high performance SoC and GPU simulation models. Can't say any more than that!",
+      "I work on high performance simulation models of Apple Silicon SoCs and GPUs.",
     ]
   },
   {
@@ -80,6 +80,19 @@ const projects = [
     description: [
       "I'm part of the Tartan Autonomous Underwater Vehicle team at the robotics club at CMU. We particpate in the annual RoboSub competition, where teams build autonmous submarines that perform a variety of tasks such as passing through gates, hitting target buoys, and dropping markers.",
       "I've had several roles on the team, including being the testing lead to get the sub ready electronically for testing (building/soldering) and collecting training data for our deep learning object detection model to detect buoys and gates. This past year I also worked a bit on software for trajectory/path planning as well as mission planning with Python and Robot Operating System."
+    ]
+  },
+  {
+    title: "Monular Depth Sensing",
+    image: "assets/monocular_depth_sensor_re.png",
+    type: "project",
+    links: [
+      { text: "CMU news", url: "https://www.ece.cmu.edu/news-and-events/story/2022/05/2022-techspark-design-expo-winners.html" },
+      { text: "Git Repo", url: "https://github.com/tangerineman/sc_depth_capstone" }
+    ],
+    description: [
+      "For my capstone group project in my final year at undergrad, I worked on a hardware accelarated monocular depth sensor. We built an out-of-the-box system that accurately detects relalitve depths of objects in a scene from a single RGB camera.",
+      "The system deployed open source ML models on a Jetson Xavier NX, accelerated by CUDA. Our project won the 'most innovative' award at CMU's design expo!"
     ]
   },
   {

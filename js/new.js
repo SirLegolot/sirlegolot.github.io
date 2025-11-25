@@ -29,7 +29,6 @@ function show_pages(chip) {
 
 // Function to open and populate the dialog
 function show_dialog(projectTitle) {
-    // --- CHANGE HERE: Search by title instead of id ---
     const project = projects.find(p => p.title === projectTitle);
 
     if (!project) return;
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
     projects.forEach(project => {
         // Create the card section element
         const cardSection = document.createElement('section');
-        cardSection.className = `s12 m6 l6 page active right`;
+        cardSection.className = `s12 m12 l6 page active right`;
         cardSection.setAttribute('data-type', project.type);
         cardSection.onclick = () => show_dialog(project.title);
 
