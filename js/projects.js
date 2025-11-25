@@ -2,8 +2,9 @@ const projects = [
   {
     title: "Apple",
     image: "assets/apple.png",
+    type: "work",
     links: [
-      // { text: "Pytorch Docs", url: "https://pytorch.org/docs/stable/distributed.elastic.html" }
+      // No links!
     ],
     description: [
       "As part of the Plaftorm Architecture group, I work on high performance SoC and GPU simulation models. Can't say any more than that!",
@@ -12,6 +13,7 @@ const projects = [
   {
     title: "Pytorch TorchElastic",
     image: "assets/torchelastic.png",
+    type: "work",
     links: [
       { text: "Pytorch Docs", url: "https://pytorch.org/docs/stable/distributed.elastic.html" }
     ],
@@ -23,6 +25,7 @@ const projects = [
   {
     title: "Cloudberry",
     image: "assets/cloudberry_re.png",
+    type: "work",
     links: [
       { text: "Git Repo", url: "https://github.com/googleinterns/step62-2020" }
     ],
@@ -35,6 +38,7 @@ const projects = [
   {
     title: "OS Kernel",
     image: "assets/os.png",
+    type: "project",
     links: [
       { text: "15-410 Website", url: "https://www.cs.cmu.edu/~410/" }
     ],
@@ -45,6 +49,7 @@ const projects = [
   {
     title: "Scotty3D",
     image: "assets/scotty.png",
+    type: "project",
     links: [
       { text: "Project Website", url: "ray_tracer.html" }
     ],
@@ -56,6 +61,7 @@ const projects = [
   {
     title: "Brain Computer Interface",
     image: "assets/bci_re.png",
+    type: "work",
     links: [
       { text: "Lab website", url: "https://www.cmu.edu/bme/helab/" }
     ],
@@ -67,6 +73,7 @@ const projects = [
   {
     title: "Tartan AUV",
     image: "assets/sub_re.png",
+    type: "project",
     links: [
       { text: "TAUV website", url: "https://tartanauv.com/team/" }
     ],
@@ -78,6 +85,7 @@ const projects = [
   {
     title: "Hide.me",
     image: "assets/hideme_re.png",
+    type: "project",
     links: [
       { text: "Git Repo", url: "https://github.com/SirLegolot/hide.me" }
     ],
@@ -89,6 +97,7 @@ const projects = [
   {
     title: "We Have A Car",
     image: "assets/whac_re.jpg",
+    type: "project",
     links: [
       { text: "Build18 website", url: "https://www.build18.org/garage/project/548/" }
     ],
@@ -100,6 +109,7 @@ const projects = [
   {
     title: "Post-Malautomated",
     image: "assets/cmupsbb_re.png",
+    type: "project",
     links: [
       { text: "Git repo", url: "https://github.com/SirLegolot/CMUPSbb" }
     ],
@@ -111,6 +121,7 @@ const projects = [
   {
     title: "Lab.me",
     image: "assets/labme_re.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/lab-me-xghsku" }
     ],
@@ -122,6 +133,7 @@ const projects = [
   {
     title: "Connect.us",
     image: "assets/connect_us.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/connect-us" }
     ],
@@ -133,6 +145,7 @@ const projects = [
   {
     title: "Mula.",
     image: "assets/mula_re.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/mula" }
     ],
@@ -144,6 +157,7 @@ const projects = [
   {
     title: "Build.me",
     image: "assets/buildme_re.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/build-me" }
     ],
@@ -155,6 +169,7 @@ const projects = [
   {
     title: "Noah's Ark",
     image: "assets/noah_small.png",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/noah-s-ark-od186x" }
     ],
@@ -165,6 +180,7 @@ const projects = [
   {
     title: "Monifi",
     image: "assets/monifi.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/monet-jprtqk" }
     ],
@@ -175,6 +191,7 @@ const projects = [
   {
     title: "Med.me",
     image: "assets/medme_re.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/med-me" }
     ],
@@ -186,6 +203,7 @@ const projects = [
   {
     title: "TrailTrak",
     image: "assets/trailtrak_re.jpg",
+    type: "hackathon",
     links: [
       { text: "Devpost", url: "https://devpost.com/software/trailtrak" }
     ],
@@ -197,6 +215,7 @@ const projects = [
   {
     title: "Twitter Mood Analyzer",
     image: "assets/twitter_re.jpg",
+    type: "hackathon",
     links: [
       { text: "Git Repo", url: "https://github.com/SirLegolot/Twitter-Mood-Analyzer" }
     ],
@@ -207,6 +226,7 @@ const projects = [
   {
     title: "LegoLight",
     image: "assets/legolight_re.jpg",
+    type: "project",
     links: [
       { text: "Presentation", url: "https://docs.google.com/presentation/d/1PucvgpA-fuE0kvHsErG5UWR27jBdCbjhKru-MmvsyFc" }
     ],
@@ -218,6 +238,7 @@ const projects = [
   {
     title: "Asteroid Orbits",
     image: "assets/asteroid.jpg",
+    type: "project",
     links: [
       { text: "SSP Website", url: "https://summerscience.org/" },
       { text: "Git Repo", url: "https://github.com/SirLegolot/SSP" }
@@ -230,6 +251,7 @@ const projects = [
   {
     title: "196 Algorithm Visualizer",
     image: "assets/wolfram.png",
+    type: "project",
     links: [
       { text: "Wolfram Demo", url: "https://demonstrations.wolfram.com/The196AlgorithmReorderAndAddAlgorithmAndRATSSequenceInDiffer/" },
       { text: "Git Repo", url: "https://github.com/SirLegolot/WolframCamp" }

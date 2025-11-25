@@ -1,17 +1,3 @@
-<!-- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="google" content="notranslate">
-    <title>Hello world</title>
-    <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
-    <link href="new.css" rel="stylesheet">
-    <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.js"></script>
-    <script type="module"
-        src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.2/dist/cdn/material-dynamic-colors.min.js"></script>
-    <script src="new.js"></script>
-</head> -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <meta name="google" content="notranslate"> -->
-
     <title>Neel Gandhi</title>
     <link href="https://cdn.jsdelivr.net/npm/beercss@3.8.0/dist/cdn/beer.min.css" rel="stylesheet">
     <link href="./new.css" rel="stylesheet">
@@ -33,9 +17,6 @@
 
 </head>
 
-<!-- <body> -->
-<!-- partial:index.partial.html -->
-
 <body class="dark small-line">
     <header class="fixed">
         <nav>
@@ -43,98 +24,47 @@
                 <img class="tiny round" src="./assets/profile0_square.jpeg" />
                 <b>Neel Gandhi</b>
             </div>
-            <!-- <img id="logo" src="./assets/reddit.svg" /> -->
-            <!-- <div class="max l">
-                <div class="field fill round prefix suffix"><i>home</i>
-                    <input value="Home" readonly="readonly" /><i>arrow_drop_down</i>
-                    <menu><a class="transparent">
-                            <label>Moderating</label></a><a>Mod Queue</a><a>Modmail</a><a>r/Mod</a>
-                        <div class="divider"></div><a class="transparent">
-                            <label>Your communities</label></a><a class="row"><i class="tiny">people</i>
-                            <div class="max">r/sveltejs</div>
-                        </a><a class="row"><i class="tiny">people</i>
-                            <div class="max">r/sveltejs</div>
-                        </a><a class="row"><i class="tiny">people</i>
-                            <div class="max">r/sveltejs</div>
-                        </a>
-                    </menu>
-                </div>
-            </div>
-            <div class="max">
-                <div class="field fill round prefix"><i>search</i>
-                    <input />
-                </div>
-            </div> -->
-            <!-- TODO figure out how this will display in mobile!! -->
-            <a href="https://github.com/SirLegolot" class="button transparent circle l m s"><i
+            <a href="https://github.com/SirLegolot" class="button transparent circle l m"><i
                     class="fa-brands fa-github"></i>
                 <div class="tooltip bottom">Github</div>
             </a>
-            <a href="https://www.linkedin.com/in/gandhi-neel/" class="button transparent circle l m s"><i
+            <a href="https://www.linkedin.com/in/gandhi-neel/" class="button transparent circle l m"><i
                     class="fa-brands fa-linkedin"></i>
                 <div class="tooltip bottom">Linkedin</div>
             </a>
-            <a href="https://devpost.com/ngandhi" class="button transparent circle l m s"><i
+            <a href="https://devpost.com/ngandhi" class="button transparent circle l m"><i
                     class="fa-solid fa-code"></i>
                 <div class="tooltip bottom">Devpost</div>
             </a>
-            <a href="assets/neel_gandhi_navy.pdf" class="button transparent circle l m s"><i>description</i>
+            <a href="assets/neel_gandhi_navy.pdf" class="button transparent circle l m"><i>description</i>
                 <div class="tooltip bottom">Resume</div>
             </a>
-            <a href="mailto:ngandhi@alumni.cmu.edu" class="button transparent circle l m s"><i>mail</i>
+            <a href="mailto:ngandhi@alumni.cmu.edu" class="button transparent circle l m"><i>mail</i>
                 <div class="tooltip bottom">Email</div>
             </a>
+            <button class="transparent circle s"><i>more_vert</i>
+                <menu class="no-wrap left">
+                    <a href="https://github.com/SirLegolot">Github</a>
+                    <a href="https://www.linkedin.com/in/gandhi-neel/">Linkedin</a>
+                    <a href="https://devpost.com/ngandhi">Devpost</a>
+                    <a href="assets/neel_gandhi_navy.pdf">Resume</a>
+                    <a href="mailto:ngandhi@alumni.cmu.edu">Email</a>
+                </menu>
+            </button>
             <label class="switch icon l m s">
                 <input type="checkbox" onclick="updateTheme()" checked="checked" />
                 <span>
                     <i>dark_mode</i>
                 </span>
             </label>
-            <!-- TODO see what to do with this... -->
-            <button class="transparent circle m s"><i>more_vert</i>
-                <menu class="no-wrap left"><a>Popular</a><a>Moderation</a><a>Chat</a><a>Notifications</a><a>Create
-                        Post</a></menu>
-            </button>
-            <!-- <button class="chip l"><i>campaign</i><span>Advertise</span></button> -->
-            <!-- <div class="row wave small-padding l small-round" data-ui="#menu-profile">
-                <div class="max">
-                    <div class="row">
-                        <img class="tiny round" src="./assets/profile0_square.jpeg" />
-                        <b class="small-text">Neel Gandhi</b>
-                        <i>arrow_drop_down</i>
-                    </div>
-                </div>
-                <menu class="no-wrap left" id="menu-profile"><a class="transparent">
-                        <label>My stuff</label></a><a class="row">
-                        <div class="max">Online Status</div>
-                        <label class="switch">
-                            <input type="checkbox" /><span></span>
-                        </label>
-                    </a><a>Profile</a><a>Style Avatar</a><a>User Settings</a>
-                    <div class="divider"></div><a class="transparent">
-                        <label>View Options</label></a><a class="row">
-                        <div class="max">Mod mode</div>
-                        <label class="switch">
-                            <input type="checkbox" /><span></span>
-                        </label>
-                    </a><a class="row">
-                        <div class="max">Dark Mode</div>
-                        <label class="switch">
-                            <input type="checkbox" onclick="updateTheme()" checked="checked" /><span></span>
-                        </label>
-                    </a>
-                </menu>
-            </div> -->
         </nav>
     </header>
     <main class="responsive">
         <div class="grid">
             <section class="s12 m4 l4">
                 <article class="no-elevate no-padding round page active left">
-                    <!-- TODO: this is huge, idk about this -->
                     <img class="responsive top-round" src="./assets/profile0_square.jpeg">
                     <div class="padding">
-                        <!-- TODO there is some weird extra space here that I'm not a fan of -->
                         <p>Hi! My name is Neel Gandhi and I'm a Carnegie Mellon University alum. I majored in ECE and
                             minored in CS and BME. I have interests in computer systems, computer vision, parallel
                             computing, and brain computer interfacing.</p>
@@ -163,23 +93,8 @@
                     </div>
                 </article>
             </section>
+
             <section class="s12 m8 l8">
-                <!-- <article class="no-elevate large-round">
-                    <div class="row"><img class="medium"
-                            src="https://styles.redditmedia.com/t5_3q4n7w/styles/profileIcon_snoo22ed849b-a83b-4d2b-9de4-03c8b6d981d5-headshot.png?width=256&amp;height=256&amp;crop=256:256,smart&amp;s=795c562ce0d5db702137a660a3b10c446e7a50f8" />
-                        <div class="max">
-                            <div class="field fill round">
-                                <input placeholder="Create Post" onclick="ui('#dialog-post')" />
-                            </div>
-                        </div>
-                        <button class="transparent circle" onclick="ui('#dialog-post')"><i>image</i>
-                            <div class="tooltip bottom">Create Media Post</div>
-                        </button>
-                        <button class="transparent circle" onclick="ui('#dialog-post')"><i>link</i>
-                            <div class="tooltip bottom">Create Link Post</div>
-                        </button>
-                    </div>
-                </article> -->
                 <div class="grid">
                     <section class="s12 m12 l12 page active top">
                         <nav class="scroll">
@@ -194,275 +109,19 @@
                                 onclick="show_pages(this);"><i>terminal</i><span>Hackathons</span></button>
                         </nav>
                     </section>
-                    <section class="s12 m6 l6 page active right" name="work_page">
-                        <article class="no-elevate no-padding round wave" onclick="ui('#dialog-post')">
-                            <img class="responsive large top-round" src="./assets/apple.png">
-                            <div class="small-padding center-align">
-                                <h6>Platform Architecture</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="work_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/torchelastic.png">
-                            <div class="small-padding center-align">
-                                <h6>TorchElastic</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="work_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/cloudberry_re.png">
-                            <div class="small-padding center-align">
-                                <h6>Cloudberry</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="work_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/bci_re.png">
-                            <div class="small-padding center-align">
-                                <h6>Brain Computer Interface</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/os.png">
-                            <div class="small-padding center-align">
-                                <h6>OS Kernel</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/scotty.png">
-                            <div class="small-padding center-align">
-                                <h6>Scotty3D</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/sub_re.png">
-                            <div class="small-padding center-align">
-                                <h6>Tartan AUV</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <!-- TODO hardware accelerated moncular depth sensing -->
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/hideme_re.png">
-                            <div class="small-padding center-align">
-                                <h6>Hide.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/whac_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>We Have A Car</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/cmupsbb_re.png">
-                            <div class="small-padding center-align">
-                                <h6>Post-Malautomated</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/legolight_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>LegoLight</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/asteroid.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Asteroid Orbits</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="project_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/wolfram.png">
-                            <div class="small-padding center-align">
-                                <h6>196 Algorithm Visualizer</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/labme_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Lab.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/connect_us.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Connect.us</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/mula_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Mula</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/buildme_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Build.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/noah_small.png">
-                            <div class="small-padding center-align">
-                                <h6>Noah's Ark</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/monifi.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Monifi</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/medme_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Med.me</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/trailtrak_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>TrailTrak</h6>
-                            </div>
-                        </article>
-                    </section>
-                    <section class="s12 m6 l6 page active right" name="hackathon_page">
-                        <article class="no-elevate no-padding round wave">
-                            <img class="responsive large top-round" src="./assets/twitter_re.jpg">
-                            <div class="small-padding center-align">
-                                <h6>Twitter Mood Analyzer</h6>
-                            </div>
-                        </article>
-                    </section>
+
+                    <div id="project-card-container" class="grid s12 m12 l12">
+                    </div>
                 </div>
             </section>
         </div>
+
         <dialog id="dialog-post">
-            <!-- <p>hello there this is a test</p> -->
             <nav class="wrap">
-                <h6>Platform Architecture</h6>
-                <!-- <div class="field border label m l">
-                    <input />
-                    <label>Community</label><i>arrow_drop_down</i>
-                    <menu><a class="row"><i class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                class="tiny">people</i><span>r/svelte</span></a></menu>
-                </div> -->
+                <h6>Project Title Placeholder</h6>
             </nav>
             <div class="space"></div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget ipsum
-                purus. Donec commodo, eros quis molestie consectetur, turpis ex eleifend sem, id
-                viverra sapien justo ut erat. Nam mattis est eu vulputate iaculis. Vestibulum mi
-                leo, eleifend vitae dolor et, malesuada pulvinar velit. Duis pharetra erat
-                sapien, eu auctor nisl lacinia vel. Cras id tristique nulla. Morbi facilisis,
-                nibh sit amet tincidunt molestie, purus sem lacinia turpis, ac varius sem leo in
-                orci. Suspendisse vitae est enim. Donec malesuada nunc sed ligula mollis, ut
-                efficitur turpis varius. Vestibulum libero est, faucibus in nibh eget, eleifend
-                ornare enim. Mauris et dictum quam. Praesent nisi ex, ultricies at mi nec,
-                sodales congue lacus.
-            </p>
-            <!-- <div class="space"></div>
-            <div class="medium-height large-width">
-                <div class="tabs scroll left-align m l"><a class="active"
-                        data-ui="#post"><i>news</i><span>Post</span></a><a
-                        data-ui="#image-video"><i>image</i><span>Image &amp; Video</span></a><a
-                        data-ui="#link"><i>link</i><span>Link</span></a><a
-                        class="grey-text"><i>insert_chart</i><span>Pool</span></a></div>
-                <div class="space"></div>
-                <div class="page bottom active" id="post">
-                    <div class="field border label s">
-                        <input />
-                        <label>Community</label><i>arrow_drop_down</i>
-                        <menu><a class="row"><i class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                    class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                    class="tiny">people</i><span>r/svelte</span></a></menu>
-                    </div>
-                    <div class="field border label">
-                        <input />
-                        <label>Title</label>
-                    </div>
-                    <div class="field border label extra textarea">
-                        <textarea></textarea>
-                        <label>Text (optional)</label>
-                    </div>
-                </div>
-                <div class="page bottom" id="image-video">
-                    <div class="field border label s">
-                        <input />
-                        <label>Community</label><i>arrow_drop_down</i>
-                        <menu><a class="row"><i class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                    class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                    class="tiny">people</i><span>r/svelte</span></a></menu>
-                    </div>
-                    <div class="row">
-                        <div class="max">
-                            <div class="field border label">
-                                <input />
-                                <label>Title</label>
-                            </div>
-                        </div>
-                        <button><span>Select a file</span>
-                            <input type="file" />
-                        </button>
-                    </div>
-                </div>
-                <div class="page bottom" id="link">
-                    <div class="field border label s">
-                        <input />
-                        <label>Community</label><i>arrow_drop_down</i>
-                        <menu><a class="row"><i class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                    class="tiny">people</i><span>r/svelte</span></a><a class="row"><i
-                                    class="tiny">people</i><span>r/svelte</span></a></menu>
-                    </div>
-                    <div class="field border label">
-                        <input />
-                        <label>Title</label>
-                    </div>
-                    <div class="field border label">
-                        <textarea></textarea>
-                        <label>Url</label>
-                    </div>
-                </div>
-                <div class="page bottom" id="pool"></div>
-            </div> -->
+            <p>Click on a project card to view its full details here!</p>
             <footer class="fixed">
                 <nav class="right-align">
                     <button data-ui="#dialog-post">Close</button>
@@ -470,10 +129,11 @@
             </footer>
         </dialog>
     </main>
-</body>
-<!-- partial -->
-<script src="./new.js"></script>
 
-<!-- </body> -->
+    <script src="./js/projects.js"></script>
+
+    <script src="./new.js"></script>
+
+</body>
 
 </html>
