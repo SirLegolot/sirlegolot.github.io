@@ -51,10 +51,11 @@ const projects = [
     image: "assets/scotty.png",
     type: "project",
     links: [
+      { text: "Scotty3D docs", url: "https://cmu-graphics.github.io/Scotty3D-docs/"},
       { text: "Project Website", url: "ray_tracer.html" }
     ],
     description: [
-      "For my computer graphics class, I implemented core components of a graphics software package called <a href=\"https://cmu-graphics.github.io/Scotty3D/\">Scotty3D</a>. These components include rasterization, interactive mesh editing, realistic path tracing, and dynamic animation. It was written in C++. This thumbnail image was generated via the software package with ray tracing!",
+      "For my computer graphics class, I implemented core components of a graphics software package called Scotty3D. These components include rasterization, interactive mesh editing, realistic path tracing, and dynamic animation. It was written in C++. This thumbnail image was generated via the software package with ray tracing!",
       "As part of the final project for my parallel computer architecture class, I accelerated the path/ray tracing with both GPU and CPU multithreading. The GPU accelerated ray tracer achieved up to 600x speedup in some scenarios over the sequential code."
     ]
   },
